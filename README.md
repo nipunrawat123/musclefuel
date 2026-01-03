@@ -12,4 +12,4 @@ MUSCLEFUEL is a premium e-commerce website built with **HTML, CSS, and JavaScrip
 - About section with company mission
 
 ## Live Demo
-[https://yourusername.github.io/musclefuel/](https://yourusername.github.io/musclefuel/)
+https://nipunrawat123.github.io/musclefuel/
