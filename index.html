@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MUSCLEFUEL | Premium Fitness Equipment</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">MUSCLE<span>FUEL</span></div>
+    <nav>
+        <a href="#">Equipment</a>
+        <a href="#about">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="cart">
+        🛒 <span id="cart-count">0</span>
+        <div class="cart-dropdown" id="cart-dropdown">
+            <h4>Your Cart</h4>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="cart-total">₹0</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" style="background-image:url('images/hero.jpg')">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <p class="tagline">PREMIUM FITNESS EQUIPMENT</p>
+        <h1>FUEL YOUR<br><span>STRENGTH</span></h1>
+        <p class="subtext">
+            Elite-grade gym equipment built for performance, power and durability.
+        </p>
+        <div class="buttons">
+            <button class="primary">Shop Collection →</button>
+            <button class="secondary">Learn More</button>
+        </div>
+    </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="collection">
+    <p class="section-tag">OUR COLLECTION</p>
+    <h2>ELITE EQUIPMENT</h2>
+    <p class="section-desc">
+        Precision-engineered equipment trusted by professionals.
+    </p>
+
+    <div class="cards">
+        <div class="card" data-name="Elite Pro Dumbbells" data-price="15000" data-img="images/dumbell.jpg" data-desc="Competition-grade adjustable dumbbells.">
+            <img src="images/dumbell.jpg">
+            <h3>Elite Pro Dumbbells</h3>
+            <p>Competition-grade adjustable dumbbells.</p>
+            <p class="price">₹15,000</p>
+        </div>
+
+        <div class="card" data-name="Titan Adjustable Bench" data-price="27000" data-img="images/bench.jpg" data-desc="Heavy-duty commercial bench.">
+            <img src="images/bench.jpg">
+            <h3>Titan Adjustable Bench</h3>
+            <p>Heavy-duty commercial bench.</p>
+            <p class="price">₹27,000</p>
+        </div>
+
+        <div class="card highlight" data-name="Olympic Power Bar" data-price="23000" data-img="images/barbell.jpg" data-desc="20kg Olympic barbell for champions.">
+            <img src="images/barbell.jpg">
+            <h3>Olympic Power Bar</h3>
+            <p>20kg Olympic barbell for champions.</p>
+            <p class="price">₹23,000</p>
+        </div>
+
+        <div class="card" data-name="Apex Commercial Treadmill" data-price="100000" data-img="images/treadmill.jpg" data-desc="Professional-grade cardio machine.">
+            <img src="images/treadmill.jpg">
+            <h3>Apex Commercial Treadmill</h3>
+            <p>Professional-grade cardio machine.</p>
+            <p class="price">₹1,00,000</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+    <p class="section-tag">ABOUT US</p>
+    <h2>OUR MISSION</h2>
+    <p class="section-desc">
+        At MUSCLEFUEL, we are dedicated to empowering athletes and fitness enthusiasts with
+        top-of-the-line gym equipment. Built for durability, performance, and style, our products
+        help you achieve your fitness goals safely and effectively.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-left">
+        <h3>MUSCLE<span>FUEL</span></h3>
+        <p>Engineered for performance. Built to last.</p>
+    </div>
+
+    <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#">Equipment</a>
+        <a href="#about">About</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+    </div>
+
+    <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>info@musclefuel.com</p>
+        <p>+91 9XXXXXXXXX</p>
+    </div>
+</footer>
+
+<!-- Toast Container -->
+<div id="toast-container"></div>
+
+<!-- Product Modal -->
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-img" src="">
+        <h3 id="modal-name"></h3>
+        <p id="modal-desc"></p>
+        <p id="modal-price"></p>
+        <div class="quantity-container">
+            <button id="decrease-qty">-</button>
+            <span id="modal-quantity">1</span>
+            <button id="increase-qty">+</button>
+        </div>
+        <button id="modal-add-btn">Add to Cart</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
